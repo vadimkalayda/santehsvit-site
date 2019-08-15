@@ -1,0 +1,49 @@
+.clients {
+  width: 100%;
+  min-height: 200px;
+}
+
+.clients_container {
+  width: 70%;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.clients_posts {
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.clients_post {
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 1620px) and (max-width: 1854px) {
+  .clients_container {
+    width: 80%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 1619px) {
+  .clients_container {
+    width: 85%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 386px) {
+  .clients_post {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+

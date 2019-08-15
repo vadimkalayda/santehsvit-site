@@ -1,0 +1,91 @@
+.goodat {
+  width: 100%;
+  min-height: 300px;
+}
+
+.goodat_container {
+  width: 70%;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.goodat-headline {
+  max-width: 480px;
+  font-size: 32px;
+  margin-bottom: 11px;
+}
+
+.goodat-underheadline {
+  max-width: 480px;
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.goodat-line {
+  width: 150px;
+  height: 1px;
+  border: none;
+  margin-top: 0;
+  margin-bottom: 64px;
+}
+
+.goodat_posts {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.goodat_post {
+  width: 300px;
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 70px;
+}
+
+.goodat_post-icon {
+  font-size: 55px;
+}
+
+.goodat_post-headline {
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+.goodat_post-text {
+  margin-top: 0;
+  font-size: 16px;
+}
+
+@media (min-width: 320px) and (max-width: 1717px) {
+  .goodat_container {
+    width: 85%;
+  }
+}
+
+@media (min-width: 704px) and (max-width: 940px) {
+  .goodat_post {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 703px) {
+  .goodat_post {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}

@@ -1,0 +1,118 @@
+.navbar {
+  width: 100%;
+  min-height: 75px;
+  background: rgba(25,40,63, .78);
+}
+
+.navbar_container {
+  width: 70%;
+  min-height: 75px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+.navbar_left {
+  width: 30%;
+  min-height: 75px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.navbar_left-link {
+  color: #00C4D8;
+  text-transform: uppercase;
+  letter-spacing: -.38px;
+  font-size: 30px;
+}
+
+.navbar_left-link span {
+  color: #fff;
+}
+
+.navbar_right {
+  width: 70%;
+  min-height: 75px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navbar_navigation {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.navbar_navigation-list {
+  list-style: none;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.navbar_navigation-link {
+  color: #a8b9c0;
+  font-size: 15px;
+  font-weight: 400;
+  transition: .2s;
+}
+
+.navbar_navigation-link:hover {
+  color: #00C4D8;
+}
+
+.navbar_navigation-link:active {
+  color: #a8b9c0;
+}
+
+@media (min-width: 775px) and (max-width: 1210px) {
+  .navbar_container {
+    width: 85%;
+  }
+  .navbar_navigation-list {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 774px) {
+  .navbar_container {
+    width: 85%;
+  }
+  .navbar_navigation-list {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .navbar_container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar_left {
+    min-height: 25px;
+    width: 100%;
+    justify-content: center;
+  }
+  .navbar_left-link {
+    margin-top: 15px;
+  }
+  .navbar_right {
+    width: 100%;
+    min-height: 25px;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 599px) {
+  .navbar_navigation {
+    margin-right: 37px;
+    max-width: 200px;
+    flex-direction: column;
+  }
+  .navbar_navigation-list {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 3px;
+  }
+}

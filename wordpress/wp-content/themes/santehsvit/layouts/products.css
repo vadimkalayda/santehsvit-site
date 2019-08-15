@@ -1,0 +1,96 @@
+.products {
+  width: 100%;
+  min-height: 300px;
+}
+
+.products_container {
+  width: 70%;
+  min-height: 300px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.products-headline {
+  max-width: 480px;
+  font-size: 32px;
+  margin-bottom: 11px;
+}
+
+.products-underheadline {
+  max-width: 480px;
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.products-line {
+  width: 150px;
+  height: 1px;
+  border: none;
+  margin-top: 0;
+  margin-bottom: 64px;
+}
+
+.products_posts {
+  max-width: 100%;
+  min-height: 200px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.products_post {
+  width: 300px;
+  height: 270px;
+  position: relative;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 30px;
+}
+
+.products_post img {
+  width: 300px;
+  height: 270px;
+}
+
+.products_post_content {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: .2s;
+}
+
+.products_post-title {
+  max-width: 270px;
+  text-transform: uppercase;
+  font-size: 25px;
+  cursor: default;
+}
+
+.products_post_content:hover {
+  opacity: .95;
+}
+
+@media (min-width: 320px) and (max-width: 1888px) {
+  .products_container {
+    width: 85%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 700px) {
+  .products_post {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
